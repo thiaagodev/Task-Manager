@@ -20,5 +20,6 @@ from api.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('register', RegisterUserView.as_view())
+    path('register', RegisterUserView.as_view()),
+    path('login', LoginView.as_view())
 ]
