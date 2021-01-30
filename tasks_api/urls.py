@@ -21,5 +21,7 @@ from api.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('register', RegisterUserView.as_view()),
-    path('login', LoginView.as_view())
+    path('login', LoginView.as_view()),
+    path('tasks', TasksListView.as_view()),
+    path('task/<int:id>', TasksDetailView.as_view())
 ]
