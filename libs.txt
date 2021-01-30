@@ -1,0 +1,11 @@
+asgiref==3.3.1
+bcrypt==3.2.0
+cffi==1.14.4
+Django==3.1.5
+djangorestframework==3.12.2
+pycparser==2.20
+PyJWT==2.0.1
+python-dotenv==0.15.0
+pytz==2020.5
+six==1.15.0
+sqlparse==0.4.1
