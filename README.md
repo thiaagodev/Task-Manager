@@ -1,11 +1,29 @@
 # Task Manager
 
-Uma API para gerenciamento de tarefas, nela é possível se registrar, logar e criar suas tarefas, também é possível visualizar, editar e excluir tarefas individualmente.
+<p align="justify"> Uma API para gerenciamento de tarefas, nela é possível se registrar, logar e criar suas tarefas, também é possível visualizar, editar e excluir tarefas individualmente.</p>
 
-A principal motivação desse repositório é aprender mais sobre o Django rest framework, e também aprender e aplicar conceitos de hash de senha com bcrypt, autenticação com JWT e permissões de usuários.
+<p align="justify"> A principal motivação desse repositório é aprender mais sobre o Django rest framework, e também aprender e aplicar conceitos de hash de senha com bcrypt, autenticação com JWT e permissões de usuários.</p>
 
 
-## O que eu aprendi com esse projeto:
+
+### Tabela de Conteúdos
+   * [Funcionalidades](#funcionalidades)
+   * [O que eu aprendi com esse projeto](#o-que-eu-aprendi-com-esse-projeto)
+   * [API documentada com Swagger](#api-documentada-com-swagger)
+   * [Como executar o projeto](#como-executar-o-projeto)
+
+
+### Funcionalidades
+
+    - [X] Cadastro de contas de usuários
+    - [X] Hashing de senha com bcrypt
+    - [X] Autenticação/Login com Token JWT
+    - [X] Permissões de usuário
+    - [X] Usuário pode criar tarefas
+    - [X] Usuário pode editar/excluir uma tarefa
+
+
+### O que eu aprendi com esse projeto
 
  - Criar sistema de login com autenticação via JWT
  - Armazenamento de senhas com hash bcrypt
@@ -14,12 +32,12 @@ A principal motivação desse repositório é aprender mais sobre o Django rest 
  - Criar rotas e views/serializers mais detalhados
 
 
-### API documentada com Swagger:
+### API documentada com Swagger
 
 <img src='./.github/api_swagger.png' alt='API Swagger'/>
 
 
-## Como executar o projeto:
+### Como executar o projeto
 
     - Para instalar as libs necessárias use o comando "pip3 install -r libs.txt"
     - Ative a venv com "source ./venv/bin/activate"
