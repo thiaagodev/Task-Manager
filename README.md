@@ -43,5 +43,5 @@
 - Para instalar as libs necessárias use o comando "pip3 install -r libs.txt"
 - Ative a venv com "source ./venv/bin/activate"
 - Rode as migrations com "python3 manage.py migrate"
-- Crie um arquivo .env com "JWT_SECRET_KEY=<chave da sua escolha>"
+- Crie um arquivo .env com "JWT_SECRET_KEY=< chave da sua escolha >"
 - Rode o servidor com o comando "python3 manage.py runserver"
