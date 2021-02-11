@@ -4,60 +4,6 @@ from django.contrib.auth.models import (AbstractBaseUser, BaseUserManager, Permi
 
 # Create your models here.
 
-class UserManager(BaseUserManager):
-    
-    def create_user(self, username, first_name, last_name, email, password):
-        if username is None:
-            raise TypeError('Usuário deve ter username')
-        if username is None:
-                raise TypeError('Usuário deve ter email')
-
-        user = self.model(username=username, emial=self.normalize_email(email), first_name=first_name, last_name = last_name)
-        user.set_password(password)
-        user.is_superuser = False
-        user.is_staff = False
-        user.save()
-    
-
-    def create_superuser(self, username, first_name, last_name, email, password):
-        if username is None:
-            raise TypeError('Usuário deve ter username')
-        if username is None:
-                raise TypeError('Usuário deve ter email')
-
-        user = self.model(username=username, emial=self.normalize_email(email), first_name=first_name, last_name = last_name)
-        user.set_password(password)
-        user.is_superuser = True
-        user.is_staff = True
-        user.save()
-        return user
-
-
-class User(AbstractBaseUser, PermissionsMixin):
-    username = models.CharField(max_length=255, unique=True, db_index=True)
-    email = models.EmailField(max_length=255, unique=True, db_index=True)
-    is_verifield = models.BooleanField(default=False)
-    is_active = models.BooleanField(default=False)
-    is_staff = models.BooleanField(default=False)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-
-    USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username']
-
-    objects = UserManager()
-
-    def __str__(self):
-        return self.email
-
-    
-    def tokens(self):
-        return ''
-    
-
-    
-
-
 class Task(models.Model):
     title = models.CharField(max_length=255, null=False)
     description = models.CharField(max_length=255, null=False)
