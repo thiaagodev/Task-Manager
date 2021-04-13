@@ -40,7 +40,7 @@
 
 ### Como executar o projeto
 
-- Para instalar as libs necessárias use o comando "pip3 install -r libs.txt"
+- Para instalar as libs necessárias use o comando "pip3 install -r requirements.txt"
 - Ative a venv com "source ./venv/bin/activate"
 - Rode as migrations com "python3 manage.py migrate"
 - Crie um arquivo .env com "JWT_SECRET_KEY=< chave da sua escolha >"
