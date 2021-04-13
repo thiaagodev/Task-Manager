@@ -2,7 +2,7 @@
 
 <p align="justify"> Uma API para gerenciamento de tarefas, nela é possível se registrar, logar e criar suas tarefas, também é possível visualizar, editar e excluir tarefas individualmente.</p>
 
-<p align="justify"> A principal motivação desse repositório é aprender mais sobre o Django rest framework, e também aprender e aplicar conceitos de hash de senha com bcrypt, autenticação com JWT e permissões de usuários.</p>
+<p align="justify"> A principal motivação desse repositório é aprender mais sobre o Django e o DRF (Django REST Framework), e também aprender e aplicar conceitos de hash de senha com bcrypt, autenticação com JWT e níveis de permissões de usuários.</p>
 
 
 
